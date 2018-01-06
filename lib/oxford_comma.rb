@@ -6,6 +6,6 @@ def oxford_comma(array)
   elsif array.length == 2
     return "#{array[0]} and #{array[1]}"
   else array.length > 2
-    return array.to_sentence(words_connector: ' , ', last_word_connector: ", and ")
-  end
+    return "#{array[0..-2].join(, )} and #{array.last}"
+    end
 end
