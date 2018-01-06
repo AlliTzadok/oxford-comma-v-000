@@ -1,12 +1,12 @@
 def oxford_comma(array)
   string_array = []
-  string_array << array
+  string_array.push(array)
   if string_array.length == nil
     return nil
   elsif string_array.length == 1
     return array[0]
   elsif string_array.length == 2
-    return array[0..-1].join(" and ")
+    return "#{array[0]} and #{array[1]}"
   else
     return array[0..-2].join(', ') + " and " + array[-1]
   end
