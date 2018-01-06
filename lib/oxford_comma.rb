@@ -8,4 +8,6 @@ def oxford_comma(array)
   else array.length > 2
     return "#{array[0..-2].join(, )} and #{array.last}"
     end
+  end
 end
+
